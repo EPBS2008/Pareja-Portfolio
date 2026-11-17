@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Portfolio Template</title>
+    <title>Contact | Eduardo Pareja</title>
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -23,7 +23,7 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="skills.html">Skills</a></li>
             <li><a href="resume.html">Resume</a></li>
@@ -33,9 +33,54 @@
     <!-- Main Content -->
     <main>
 
-        <h2>Page Title</h2>
+        <h2>Contact Me</h2>
 
-        <p>Page content will go here.</p>
+        <section class="contactc">
+            <section class="contactinfo">
+                <h3>Contact Information</h3>
+                <p><strong>Github:</strong> <a href="https://github.com/EPBS2008" target="_blank" rel="noopener noreferrer">My GitHub Profile</a></p>
+                <p><strong>Email:</strong> <a href="mailto:edupareja@outlook.com">edupareja@outlook.com</a></p>
+            </section>
+
+            <section class="contactform">
+                <h3>Send a Mesage</h3>
+
+                <form action="#" method="post">
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <label for="phone">Phone Number (Optional):</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+                    <label for="subject">Subject:</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Select a subject</option>
+                        <option value="general">General Question</option>
+                        <option value="projects">Projects</option>
+                        <option value="resume">Resume</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+
+                    <button type="submit">Send Message</button>
+
+                </form>
+            </section>
+        </section>
+
+        <section class="audio">
+            <h3>Background Music</h3>
+            <audio controls loop>
+                <source src="assets/backgroundm.mp3" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+        </section>
 
     </main>
 
